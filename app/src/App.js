@@ -46,17 +46,17 @@ function App() {
   return (
     <div className=" pt-0 align-center">
       <div id="hero" className="bg relative">
-        <div className="flex flex-row xl:gap-[800px]">
+        <div className="flex flex-row gap-[700px]">
           <img className="pl-16 mt-9 w-[166px]" src={logo_white} alt="" />
-          <div className="flex flex-row xl:gap-32">
-          <div className="pt-9 flex flex-row gap-16 justify-center ">
+          <div className="flex flex-row gap-52">
+          <div className="pt-9 flex flex-row gap-28 justify-center ">
 
             <a href="#about us">About us</a>
             <a href="#download">Download</a>
            
           </div>
           <div>
-          <a href="#footer"><img src={connecter} alt="" /></a>
+          <a href="#footer"><img className="pt-9" src={connecter} alt="" /></a>
           </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ function App() {
           <img src={frame1} alt="" />
         </div>
         <div>
-          <img className="absolute bottom-[104px]" src={line} alt="line" />
+          <img className="absolute bottom-11/12 w-[1285px]" src={line} alt="line" />
         </div>
       </div>
       <div   id="about us" className=" relative flex flex-row gap-24 mt-36 justify-center  ">
@@ -109,10 +109,10 @@ function App() {
         <div className="absolute bottom-[-70px]">
           <img className="rotate-[180deg]" src={pink_line} alt="" />
         </div>
-        <p className="text-dzayergo-black xl:text-[48px] text-center font-medium mt-9">
+        <p className="text-dzayergo-black text-[48px] text-center font-medium mt-9">
         Télécharger Notre Application Mobile!
         </p>
-        <p className="text-dzayergo-pink xl:text-[52px] text-center font-medium ">
+        <p className="text-dzayergo-pink text-[52px] text-center font-medium ">
         DzayerGO
         </p>
         <div className="slider">
