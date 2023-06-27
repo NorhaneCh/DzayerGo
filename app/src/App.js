@@ -5,8 +5,6 @@ import Aos from "aos";
 import'aos/dist/aos.css';
 import ButtonMailto from "./components/ButtonMailto.js";
 import Swiper from "./components/Swiper";
-
-import logo_white from "./images/logo_white.png";
 import logo from "./images/logo.png";
 import notre_dame from './images/notre_dame.png';
 import line from "./images/Line.png";
@@ -22,6 +20,7 @@ import frame6 from "./images/frame6.png";
 import location from "./images/location.png";
 import phone from "./images/phone.png";
 import email from './images/email.png';
+import Navbar from "./components/Navbar";
 
 function App() {
 
@@ -32,82 +31,75 @@ function App() {
   return (
 
     <div className=" pt-0 align-center">
-      <div id="hero" className="bg relative">
-        <div className="flex flex-row gap-[1000px]">
-          <img className="pl-16 mt-9 w-[166px]" src={logo_white} alt="DzayerGo" />
-          
-          <nav className='mx-9 mt-12'>
-            <a className=' p-[10px] ml-[20px] ' href="#about us"> About us </a> 
-            <a className='p-[10px] ml-[20px] ' href="#download"> Download </a>
-          </nav>
-        
-        </div>
+      <div id="hero" className="bg h-[500px] lg:h-[700px] relative">
+  
+          <Navbar className="z-20"></Navbar>
+                  
+        <div className="flex flex-col mt-6 lg:mt-16 justify-center items-center">
 
-        <div className="flex flex-col mt-16 justify-center items-center">
-
-          <p className="text-[45px] font-bold  text-dzayergo-white">Discover the magic of</p>
-          <p className="text-[45px] font-bold text-dzayergo-pink">Algeria</p>
-          <a className="btn_go" href="start">GO</a>
+          <p className="text-[25px] lg:text-[45px] font-bold  text-dzayergo-white">Discover the magic of</p>
+          <p className="text-[25px] lg:text-[45px] font-bold text-dzayergo-pink">Algeria</p>
+          <a className="invisible lg:visible btn_go" href="#start"><p className="text-[20px] lg:text-[30px]">GO</p> </a>
           
         </div>
 
-        <div className="absolute bottom-28 z-10 right-[150px] rotate-[20deg]">
-          <img className="h-[400px]" src={frame1} alt="" />
+        <div className="absolute z-10 rotate-[20deg] bottom-16 right-12 lg:right-[150px]">
+          <img className=" h-[200px] lg:h-[400px]" src={frame1} alt="" />
         </div>
 
-        <div className="absolute w-[1260px] bottom-28 z-1 ">
+        <div className="absolute w-[70%] lg:w-[82%] bottom-16 lg:bottom-28 z-0">
           <img className="rotate-180" src={line} alt="line" />
         </div>
 
       </div>
 
-      <div id="start" className=" relative flex flex-row gap-36 mt-36 justify-center">
+      <div id="start" className="relative flex flex-col lg:flex-row gap-36 mt-36 justify-center">
 
-        <div data-aos="fade-left" className="absolute top-40 ml-[1260px]">
+        <div data-aos="fade-left" className="absolute top-24 lg:top-40 lg:ml-[1260px] ml-32">
          <img src={black_line} alt="line" />
         </div>
         
-        <img data-aos="fade-right" className="w-[600px] h-[400px]" src={notre_dame} alt="Notre dame d'afrique" />
+        <img className="order-last lg:order-first mt-[-80px] lg:mt-0 w-[90%] lg:w-[600px] lg:h-[400px]" src={notre_dame} alt="Notre dame d'afrique" />
 
-        <div>
-          <span className="text-dzayergo-pink text-[40px] font-bold">DzayerGO</span>
-          <span className="text-[40px] font-normal">, The best application</span>
-          <p className="text-[40px] font-normal">to discover Algeria</p>
-          <p className="text-[25px] w-[90%] mt-16 text-justify">Our unparalleled application offers features that are almost or rarely seen in other application instances. Whether you want to virtually or actually visit any place of your choice, now this is possible for you!
+        <div className="text-center">
+          <span className="text-dzayergo-pink text-[25px] lg:text-[40px] font-bold">DzayerGO</span>
+          <span className="text-[25px] lg:text-[40px] font-normal">, The best application</span>
+          <p className="text-[25px] lg:text-[40px] font-normal">to discover Algeria</p>
+          <p className="text-[20px] lg:text-[25px] px-6 lg:w-[90%] mt-16 text-justify">Our unparalleled application offers features that are almost or rarely seen in other application instances. Whether you want to virtually or actually visit any place of your choice, now this is possible for you!
           Great news! Our application is intended for everyone without exception, available in 3 languages.</p>
         </div>
 
       </div>
 
-      <div id="about us" className="flex flex-row  mt-36 justify-center items-center ">
+      <div id="about us" className="flex flex-col lg:flex-row gap-36 mt-36 justify-center">
 
-      <div className="w-[70%] pl-20">
-          <p className="text-[40px] font-normal">Who are we? The team </p>
-          <p className="text-[40px] font-bold text-dzayergo-green">Solvinno !</p>
-          <p className="text-[25px] w-[90%] mt-12 text-justify">Specialized in digital services since its appearance in 2012, we are committed to offering innovative and high-quality solutions to our clients. With a talented team equipped with undeniable skills, we are capable of tackling the most complex challenges.</p>
+      <div className="lg:w-[70%] lg:pl-20 text-center">
+          <p className="text-[25px] lg:text-[40px] font-normal">Who are we? The team </p>
+          <p className="text-[25px] lg:text-[40px] font-bold text-dzayergo-green">Solvinno !</p>
+          <p className="text-[20px] lg:text-[25px] px-6 lg:w-[90%] mt-16 text-justify">Specialized in digital services since its appearance in 2012, we are committed to offering innovative and high-quality solutions to our clients. With a talented team equipped with undeniable skills, we are capable of tackling the most complex challenges.</p>
         </div>
 
-        <div className="flex flex-col   items-center gap-6">
-         <img data-aos="fade-left" className="w-[600px] h-[400px]" src={solvinno} alt="solvinno" />
-         <button data-aos="fade-left" className="btn1">Visit our website</button>
+        <div className="flex flex-col items-center gap-6 mt-[-150px] lg:mt-[-70px]">
+         <img className="lg:w-[600px] lg:h-[400px]" src={solvinno} alt="solvinno" />
+         <button data-aos="fade-up" className="btn1 text-[15px] lg:text-[25px]">Visit our website</button>
         </div>
 
       </div>
 
       <div id="download" className=" relative mt-28">
 
-        <div data-aos="fade-left"className="absolute top-40 ml-[80%]">
+        <div data-aos="fade-left"className="absolute top-40 lg:ml-[80%] ml-[30%]">
          <img src={pink_line} alt="" />
         </div>
 
-        <div data-aos="fade-right" className="absolute bottom-[-70px]">
+        <div data-aos="fade-right" className="absolute bottom-[-70px] lg:mr-[70%] mr-[30%]">
          <img className="rotate-180" src={pink_line} alt="" />
         </div>
 
-        <p className="text-dzayergo-black text-[40px] text-center font-medium mt-9">Download our mobile application</p>
-        <p className="text-dzayergo-pink text-[40px] text-center font-bold ">DzayerGO</p>
+        <p className="text-dzayergo-black text-[25px] lg:text-[40px] text-center font-medium mt-9">Download our mobile application</p>
+        <p className="text-dzayergo-pink text-[25px] lg:text-[40px] text-center font-bold ">DzayerGO</p>
 
-      <Swiper 
+    <Swiper 
         i1={frame1} 
         i2={frame2} 
         i3={frame3} 
@@ -118,9 +110,9 @@ function App() {
 
     </div>
 
-      <div className="relative bg-dzayergo-purple h-[200px] pt-6 mt-36">
+      <div className="relative bg-dzayergo-purple py-6 lg:py-16 mt-28">
 
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-32 mt-12">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-32">
 
         {/*-- App Store button */}
         <a href="https://www.apple.com/fr/app-store/" target="_blank" class="market-btn apple-btn" role="button">
@@ -139,38 +131,38 @@ function App() {
 
       <div id="footer" className="footer mb-12">
 
-        <div className="flex lx:flex-row justify-center mt-10 gap-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center mt-10 gap-20 lg:gap-56">
 
           <div>
-            <img className="w-[166px]" src={logo}/>
+            <img className=" invisible lg:visible w-[166px]" src={logo}/>
           </div>
 
-            <div className="flex flex-col gap-20 items-center">
+            <div className="flex flex-col gap-6 lg:gap-20 items-center mt-[-250px] lg:mt-0">
 
-              <div className="flex flex-row gap-6 justify-center">
-                <a href="#">| Privacy Policy</a>
-                <a href="#">| Terms of Use</a>
-                <a href="#">| Marketing Policy</a>
-                <a href="#">| Help</a>
+              <div className="flex flex-row text-[12px] lg:text-[20px] lg:flex-row gap-4 lg:gap-6 justify-center">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Marketing Policy</a>
+                <a href="#">Help</a>
               </div>
 
-              <p className="text-xl">DzayerGO@2023 All rights Reserved </p>
+              <p className="text-[12px] lg:text-[20px]">DzayerGO@2023 All rights Reserved </p>
 
             </div>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2 lg:gap-6 mt-[-30px]">
 
               <div className="flex flex-row gap-6">
                 <img src={location}/>
-                <Link to="https://goo.gl/maps/VFiGzHnZwLM5dp3K8"><p>Rue 24, Oued Smar</p></Link>
+                <Link to="https://goo.gl/maps/VFiGzHnZwLM5dp3K8"><p className="text-[12px] lg:text-[20px]">Rue 24, Oued Smar</p></Link>
               </div>
 
               <div className="flex flex-row gap-6">
                 <img src={phone}/>
-                <a href="tel:+213-34453466"><p>+213-34453466</p></a>
+                <a href="tel:+213-34453466"><p className="text-[12px] lg:text-[20px]">+213-34453466</p></a>
               </div>
 
-              <div className="flex flex-row gap-6">
+              <div className="flex flex-row gap-6 text-[12px] lg:text-[20px]">
                 <img src={email}/>
                 <ButtonMailto label="DzayerGO@gmail.com" mailto="mailto:dzayergo@gmail.com" />
               </div>

@@ -38,24 +38,24 @@ const Swiper = ({i1,i2,i3,i4,i5,i6}) => {
         ]
       };
       return (
-        <Slider className="slider" {...settings}>
+        <Slider className="slider lg:pl-[40px] pl-[80px]" {...settings}>
         <div>
-              <img className="h-[500px]" src={i1} alt="" />
+              <img className=" h-[300px] lg:h-[500px]" src={i1} alt="" />
             </div>
             <div>
-              <img className="h-[500px]" src={i2} alt="" />
+              <img className="h-[300px] lg:h-[500px]" src={i2} alt="" />
             </div>
             <div>
-              <img className="h-[500px]" src={i3} alt="" />
+              <img className=" h-[300px] lg:h-[500px]" src={i3} alt="" />
             </div>
             <div>
-              <img className="h-[500px]" src={i4} alt="" />
+              <img className="h-[300px] lg:h-[500px]" src={i4} alt="" />
             </div>
             <div>
-              <img className="h-[500px]" src={i5} alt="" />
+              <img className="h-[300px] lg:h-[500px]" src={i5} alt="" />
             </div>
             <div>
-              <img className="h-[500px]" src={i6} alt="" />
+              <img className="h-[300px] lg:h-[500px]" src={i6} alt="" />
             </div>
   </Slider>
       )
