@@ -129,7 +129,7 @@ function App() {
         </div>
       </div>
 
-      <div id="footer" className="footer mb-12">
+      <div id="footer" className="footer">
 
         <div className="flex flex-col lg:flex-row items-center justify-center mt-10 gap-20 lg:gap-56">
 
@@ -137,7 +137,7 @@ function App() {
             <img className=" invisible lg:visible w-[166px]" src={logo}/>
           </div>
 
-            <div className="flex flex-col gap-6 lg:gap-20 items-center mt-[-250px] lg:mt-0">
+            <div className="flex flex-col gap-6 lg:gap-9 items-center mt-[-250px] lg:mt-0">
 
               <div className="flex flex-row text-[12px] lg:text-[20px] lg:flex-row gap-4 lg:gap-6 justify-center">
                 <a href="#">Privacy Policy</a>
@@ -150,27 +150,32 @@ function App() {
 
             </div>
 
-            <div className="flex flex-col gap-2 lg:gap-6 mt-[-30px]">
+            <div className="flex flex-col gap-2 lg:gap-6 lg:mt-6 mt-[-30px]">
 
-              <div className="flex flex-row gap-6">
-                <img src={location}/>
+              <div className="flex flex-row gap-2 lg:gap-6 items-center">
+                <img className='w-[14px] h-[18px] lg:w-[21px] lg:h-[27.31px]' src={location}/>
                 <Link to="https://goo.gl/maps/VFiGzHnZwLM5dp3K8"><p className="text-[12px] lg:text-[20px]">Rue 24, Oued Smar</p></Link>
               </div>
 
-              <div className="flex flex-row gap-6">
-                <img src={phone}/>
+              <div className="flex flex-row gap-2 lg:gap-6 items-center">
+                <img className='w-[16px] h-[16px] lg:w-[21px] lg:h-[20.48px]'src={phone}/>
                 <a href="tel:+213-34453466"><p className="text-[12px] lg:text-[20px]">+213-34453466</p></a>
               </div>
 
-              <div className="flex flex-row gap-6 text-[12px] lg:text-[20px]">
-                <img src={email}/>
+              <div className="flex flex-row gap-2 lg:gap-6 text-[12px] lg:text-[20px] items-center">
+                <img className='w-[18px] h-[15px] lg:w-[23px] lg:h-[17.56px]'src={email}/>
                 <ButtonMailto label="DzayerGO@gmail.com" mailto="mailto:dzayergo@gmail.com" />
               </div>
 
             </div>
           
         </div>
+        <div className="text-[13px] lg:text-[20px] text-bold text-center mt-9 lg:mt-20">
+        <p>Made with ❤ by 놀한</p>
       </div>
+      
+      </div>
+      
     </div>  
   );
 }
