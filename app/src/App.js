@@ -32,8 +32,18 @@ function App() {
 
     <div className=" pt-0 align-center">
       <div id="hero" className="bg h-[500px] lg:h-[700px] relative">
+
+      <div className="absolute w-[70%] lg:w-[82%] bottom-16 lg:bottom-28 ">
+          <img className="rotate-180" src={line} alt="line" />
+        </div>
+        
+      <div className="absolute rotate-[20deg] bottom-16 right-12 lg:right-[150px]">
+          <img className=" h-[200px] lg:h-[400px]" src={frame1} alt="" />
+        </div>
+
+    
+        <Navbar></Navbar>
   
-          <Navbar className="z-20"></Navbar>
                   
         <div className="flex flex-col mt-6 lg:mt-16 justify-center items-center">
 
@@ -43,13 +53,6 @@ function App() {
           
         </div>
 
-        <div className="absolute z-10 rotate-[20deg] bottom-16 right-12 lg:right-[150px]">
-          <img className=" h-[200px] lg:h-[400px]" src={frame1} alt="" />
-        </div>
-
-        <div className="absolute w-[70%] lg:w-[82%] bottom-16 lg:bottom-28 z-0">
-          <img className="rotate-180" src={line} alt="line" />
-        </div>
 
       </div>
 
