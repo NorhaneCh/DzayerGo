@@ -21,6 +21,7 @@ import location from "./images/location.png";
 import phone from "./images/phone.png";
 import email from './images/email.png';
 import Navbar from "./components/Navbar";
+import fenec from "./images/fenec.png";
 
 function App() {
 
@@ -37,8 +38,8 @@ function App() {
           <img className="rotate-180" src={line} alt="line" />
         </div>
         
-      <div className="absolute rotate-[20deg] bottom-16 right-12 lg:right-[150px]">
-          <img className=" h-[200px] lg:h-[400px]" src={frame1} alt="" />
+      <div className="absolute bottom-0 right-12 lg:right-[150px]">
+          <img className=" h-[200px] lg:h-[400px]" src={fenec} alt="" />
         </div>
 
     
