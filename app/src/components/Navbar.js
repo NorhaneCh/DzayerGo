@@ -14,7 +14,7 @@ const Navbar = () => {
     return ( 
         <header className='z-10 top-0'>
             <img className="lg:pl-16 mt-6 lg:mt-9 w-20 lg:w-[166px]" src={logo_white} alt="DzayerGo" />
-            <nav ref={navRef} className='Btns px-5 mx-[10px] ml-auto mr-auto'>
+            <nav ref={navRef} className='Btns px-36 mx-[10px] ml-56 mr-auto'>
 
                 <button onClick={showNavbar}>
                     <a className=' relative p-[10px] ml-[15px] ' href="#about us"> About us </a>
