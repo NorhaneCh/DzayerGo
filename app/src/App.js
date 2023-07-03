@@ -39,7 +39,7 @@ function App() {
         </div>
         
       <div className="absolute bottom-0 right-12 lg:right-[150px]">
-          <img className=" h-[200px] lg:h-[400px]" src={fenec} alt="" />
+          <img className=" h-[200px] lg:h-[400px]" src={fenec} alt="numedia" />
         </div>
 
     
